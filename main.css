@@ -1,0 +1,502 @@
+/* Paleta de cores 
+
+rgb(228, 197, 158)
+rgb(175, 130, 96)
+rgb(128, 61, 59)
+rgb(50, 44, 43)  */
+
+@font-face {
+    font-family: 'Merrycle Carved Font';
+    src: url('/fonts/Merrycle\ Carved\ Font\ by\ Jasm\ 7NTypes.otf') format('truetype');
+}
+
+@media (max-width: 576px) {
+    .nav2 {
+        display: none;
+    }
+
+    .btnHamburguer{
+        display: block;
+    }
+
+    .nav1{
+        justify-content: space-between;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    #about img {
+        width: 90vw;
+        height: auto;
+    }
+
+    #title {
+        font-size: 40px;
+    
+    }
+
+    #logo img {
+        width: 20vw;
+        height: auto;
+    }
+
+    #imagem {
+        height: auto;
+        width: 70vw;
+    }
+
+    #about, #products, #contact{
+        scroll-margin-top: 250px; 
+    }
+
+    #meuContainer #cardContact {
+        margin: 20px;
+        width: 100%;
+    }
+
+
+
+}
+
+body a
+ {
+    text-decoration: none;
+    color: rgb(128, 61, 59);
+}
+
+body .nav-link {
+    color: rgb(128, 61, 59);
+}
+#aba {
+    background-color: rgb(228, 197, 158, 0.7);
+    color: rgb(50, 44, 43);
+}
+
+.card-body a {
+    align-items: end;
+    align-content: end;
+}
+
+/* 
+small < 576
+medium > 577 < 768
+large > 769
+*/
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .btnHamburguer{
+        display: none;
+    }
+
+    #title {
+        justify-content: start;
+        font-size: 50px;
+    }
+
+    #about, #products, #contact{
+        scroll-margin-top: 150px; 
+    }
+
+    #meuContainer #cardContact {
+        margin: 25px;
+        width: 75%;
+    }
+    
+}
+
+@media (min-width: 769px) {
+
+    .btnHamburguer{
+        display: none;
+    }
+    
+
+    #title {
+        font-size: 60px;
+    
+    }
+
+    #about, #products, #contact{
+        scroll-margin-top: 150px; 
+}
+
+#meuContainer #cardContact {
+    margin: 30px;
+    width: 50%;
+}
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    transition: all 0.4s ease-in-out;
+    color: rgb(50, 44, 43);
+}
+
+#texto {
+    resize: none;
+}
+
+.box {
+    height:50px; /* Define a altura do elemento */
+    border-left: 25px solid rgb(128, 61, 59); /* Define a borda esquerda */
+    width: auto;
+    background-color: #f0f0f0; /* Cor de fundo para visualização */
+}
+
+/* Header */
+
+html body {
+    /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+    background-color: rgb(228, 197, 158, 0.5);
+} 
+
+
+h2, h3, h, h5,
+p, label { 
+font-family: Quicksand, sans-serif;
+}
+
+header ul,
+.nav-tabs .nav-link,
+.card a {
+    font-family: Poppins, sans-serif;
+    padding: 3px;    
+}
+
+header ul,
+.nav-tabs .nav-link{
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    
+}
+
+.card-title {
+    font-weight: 900;
+    font-size: large;
+    line-height: 1;
+}
+
+.card-body {
+    text-align: center;
+}
+
+#meuContainer #cardContact {
+    background-color: rgb(228, 197, 158, 0.9);
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;  
+}
+
+header .nav1 {
+    
+    border-bottom: 1vw solid rgb(175, 130, 96, 0.5);
+}
+
+/* header .navbar {
+    background-color: rgb(128, 61, 59, 0.1);
+} */
+
+header .nav2 {
+    border-bottom: 1vw solid rgb(228, 197, 158, 0.5);
+
+} 
+
+.navbar img {
+    height: 20vw;
+    max-height: 110px;
+    
+}
+
+
+
+* img {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(175, 130, 96, 0.75);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; /* Ajuste o valor conforme necessário */
+    height: 100px;
+    
+}
+
+.nav-pills, .nav1 {
+    /* background: rgba(128, 61, 59, 0.2); */
+    backdrop-filter: blur(1.5px);
+}
+
+.navbar h1 {
+    font-family: Merrycle Carved Font;
+    font-size: 6vw;
+    
+}
+
+#header {
+    background-color: rgb(228, 197, 158, 0.2);
+    
+}
+
+.navbar a {
+    text-align: center;
+    
+}
+
+.nav2 .nav-link.active {
+    color: rgb(128, 61, 59) !important; 
+    border: 1px solid rgb(128, 61, 59, 0.5);
+    background-color: transparent !important; 
+}
+
+.navbar .nav2{
+    background-color: rgb(175, 130, 96, 0.25);
+    width: 100%;
+    
+
+}
+
+.navbar btn {
+    border: 5px solid rgb(228, 197, 158, 0.3); 
+}
+
+.btnHamburguer {
+    border: 5px solid rgb(228, 197, 158, 0.3); 
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+}
+
+.about {
+    position: relative;
+}
+
+#card {
+    margin: 10px;
+    max-width: 250px;
+    min-width: 200px;
+}
+
+
+
+#products .col-sm-12{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    min-height: 60px;
+}
+
+header ul {
+    background-color: rgb(228, 197, 158, 0.3);
+    
+}
+
+.aboutText {
+    display: block;
+}
+
+section h2 {
+    font-weight: 900;
+    padding: 5vw;
+    /* border-left: 25px solid rgb(128, 61, 59); */
+}
+
+.aboutText h5 {
+    padding: 3.5vw;
+}
+
+h5.card-title {
+    font-weight: 600;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: Poppins, sans-serif;
+}
+
+/* BOAS VINDAS */
+
+#boasVindas {
+    padding: 3vw;
+    font-weight: 600;
+}
+
+#about p {
+    line-height: 1.5;
+}
+
+/* PRODUCTS */
+
+
+
+.card-body  {
+    position: relative;
+}
+
+/* ABOUT */
+
+.about img {
+    width: 40vw;
+    height: 40vw;
+    
+}
+
+/* FOOTER */
+
+.footer, .footer .col {
+    text-align: center;
+    font-size: small;
+    height: 20px;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px; /* Ajuste o valor conforme necessário */
+    border-bottom-right-radius: 10px;
+}
+
+
+
+.img {
+    float: left;
+    padding: 16px;
+}
+
+#aboutText {
+    padding: 1vw;
+
+}
+
+
+
+
+/* Estilo para o modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica na frente de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: hidden;
+    background-color: rgb(50, 44, 43); /* Fundo preto com opacidade */
+    background-color: rgb(228, 197, 158, 0.3); /* Fundo com opacidade */
+}
+
+#contact .card {
+    padding: 1vw;
+
+}
+ 
+#meuContainer {
+    background-color: rgb(228, 197, 158, 0.5);
+}
+.container {
+}
+
+#contact  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Conteúdo do modal */
+.modalConteudo {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid rgb(128, 61, 59);
+    width: 80%; /* Largura do modal */
+    
+}
+
+/* Botão de fechar */
+.fechar {
+    color: rgb(128, 61, 59);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: rgb(50, 44, 43);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalConteudo img {
+    height: auto;
+    width: 100%;
+    
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#card {
+    background-color: rgba(228, 197, 158, 0.9);
+}
+
+#card:hover {
+    background-color: rgb(128, 61, 59, 0.2);
+    transform: scale(1.05)
+ }
+ 
+ .imagem-card:hover {
+    transform: scale(1.05);
+}
+
+form .form-group {
+    padding: 1vw;
+}
+
+.card .img-thumbnail {
+    background-color: rgb(228, 197, 158, 0.3);
+}
+
+.card .img-thumbnail:hover {
+    background-color: rgb(228, 197, 158, 0.3);
+    /* opacity: 90%; */
+    filter: contrast(110%) saturate(110%) brightness(110%);
+}
+
+header li:hover {
+
+    background: rgba(128, 61, 59, 0.2);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: black;
+}
+
+#cardContact {
+    margin-bottom: 50px;
+}
+
+.footer .col {
+    background-color: rgb(175, 130, 96, 0.75);
+}
+
